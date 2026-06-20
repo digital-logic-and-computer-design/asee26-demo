@@ -43,6 +43,7 @@
             "tabnine.tabnine-vscode"
         ],
         "settings": {
+            "chat.disableAIFeatures": true,
              "extensions.verifySignature": false,
             "riscv-venus-cse2600.enableCallingConvention": "",
             "riscv-venus.enableCallingConvention": "",
