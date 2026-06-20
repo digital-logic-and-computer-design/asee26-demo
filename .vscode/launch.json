@@ -4,18 +4,24 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "type": "venus",
             "request": "launch",
-            "name": "Launch with all views",
+            "name": "Launch with board view",
             "program": "${file}",
             "stopOnEntry": true,
             "stopAtBreakpoints": true,
-            "openViews": [ "Led and Key Board" ],
-            "ledAndKey" : {
-                "hideUART": false,
+            "openViews": [
+                "Led and Key Board"
+            ],
+            "ledAndKey": {
+                "hideBoard": false,
                 "hideRGB": false,
-                "hideBoard": false
+                "hideUART": false,
+                "baudRate": 57600,
+                "clocksPerInst": 1,
+                "clock": 6000000
             }
         }
     ]
